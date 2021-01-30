@@ -1,0 +1,27 @@
+//colors
+$white: #fff;
+$gray: #eee;
+$gray_opacity: #77777766;
+$black_opacity: #000000a6;
+$black: #000000;
+$dark: #2d2d2d;
+$green: #4bbfab;
+$red: #b92020;
+$green_opacity: #4bbfab50;
+
+// fonts
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url('~assets/fonts/GothamRoundedBold_21016.ttf');
+    font-display: block;
+}
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url('~assets/fonts/GothamRoundedBook_21018.ttf');
+    font-display: block;
+}
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: url('~assets/fonts/GothamRoundedMedium_21022.ttf');
+    font-display: block;
+}
