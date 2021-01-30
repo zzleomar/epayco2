@@ -1,0 +1,29 @@
+.epayco2__form {
+    &--label {
+        font-family: 'Gotham-Rounded-Book';
+        color: $orange;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    &--title {
+        font-size: 1rem;
+        font-weight: bold;
+        letter-spacing: 0px;
+        color: $gray;
+        opacity: 1;
+        margin-bottom: 0em;
+        margin-top: 0px;
+    }
+    &--container {
+        margin-bottom: 0.5em;
+        &:end {
+            margin-bottom: 3em;
+        }
+    }
+    & .ant-calendar-picker {
+        width: 100%;
+        & i {
+            color: $orange;
+        }
+    }
+}
