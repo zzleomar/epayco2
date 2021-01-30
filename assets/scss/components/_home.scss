@@ -1,4 +1,18 @@
 .epayco2__home {
-    margin: 0 auto;
-    margin-top: 1rem;
+    padding-top: 1rem;
+    background: url('~static/branding.jpg');
+    min-height: calc(100vh - 115px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    &--h1 {
+        font-family: 'Gotham-Medium';
+        font-size: 1.2rem;
+    }
+    &--button {
+    }
 }

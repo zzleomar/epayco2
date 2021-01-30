@@ -3,7 +3,7 @@
     <a-layout-header>
       <Nav :items="items" />
     </a-layout-header>
-    <a-layout-content style="padding: 0 50px">
+    <a-layout-content style="padding: 0">
       <Nuxt />
     </a-layout-content>
     <a-layout-footer style="text-align: center">
