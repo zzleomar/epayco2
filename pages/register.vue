@@ -54,7 +54,7 @@ export default {
           label: 'Celular',
           data: 'phone',
           type: 'input',
-          placeholder: 'Ingreseun Nro. Celular',
+          placeholder: 'Ingrese un Nro. Celular',
           message: 'Debe ingresar un numero celular ejemplo +584121233421',
           required: true,
           validator: 'phone'

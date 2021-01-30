@@ -19,6 +19,20 @@
               :placeholder="input.placeholder"
             />
           </a-form-item>
+          <a-form-item v-if="input.type === 'number'">
+            <label :for="input.data" class="epayco2__form--label">
+              {{ input.label }}
+            </label>
+            <a-input
+              :id="input.data"
+              v-decorator="[
+                input.data,
+                { rules: [{ required: input.required !== undefined ? input.required : true, message: input.message }], initialValue: 0 },
+              ]"
+              :placeholder="input.placeholder"
+              @change="handleNumberChange"
+            />
+          </a-form-item>
         </a-col>
       </a-row>
       <ButtonPrimary :text="textButton" :icon="null" :submit="true" />
@@ -59,6 +73,13 @@ export default {
           this.submit(values)
         }
       })
+    },
+    handleNumberChange (e) {
+      const number = parseInt(e.target.value || 0, 10)
+      if (isNaN(number)) {
+        return
+      }
+      e.target.value = number
     }
   }
 }
