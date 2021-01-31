@@ -5,8 +5,12 @@ on: [push, pull_request]
 jobs:
   cd:
     runs-on: ${{ matrix.os }}
+<<<<<<< HEAD
     env:
       API_URL: https://epayco2-api.herokuapp.com
+=======
+
+>>>>>>> feature deploy github page
     strategy:
       matrix:
         os: [ubuntu-latest]
