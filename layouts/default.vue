@@ -17,12 +17,6 @@ export default {
   components: {
     Nav
   },
-  props: {
-    type: {
-      type: String,
-      default: 'home'
-    }
-  },
   data () {
     return {
       items: [

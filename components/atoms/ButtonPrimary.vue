@@ -1,8 +1,8 @@
 <template>
-  <div class="decaon__button">
+  <div class="epayco2__button">
     <a-button type="primary" :html-type="submit ? 'submit' : 'button'" @click="click">
       {{ text }}
-      <a-icon v-if="icon !== null" :type="icon" :theme="theme" class="decaon__button--icon" />
+      <a-icon v-if="icon !== null" :type="icon" :theme="theme" class="epayco2__button--icon" />
     </a-button>
   </div>
 </template>
