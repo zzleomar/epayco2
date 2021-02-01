@@ -22,15 +22,19 @@ export default {
       items: [
         {
           text: 'Nuevo usuario',
-          link: '/register'
+          link: 'register'
         },
         {
           text: 'Recargar',
-          link: '/recharge'
+          link: 'recharge'
         },
         {
           text: 'Consultar',
-          link: '/query'
+          link: 'query'
+        },
+        {
+          text: 'Factura',
+          link: 'invoice'
         }
       ]
     }

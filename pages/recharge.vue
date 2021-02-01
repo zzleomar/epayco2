@@ -54,7 +54,7 @@ export default {
     }
   },
   methods: {
-    ...mapActions('account', ['createAccount', 'recharge']),
+    ...mapActions('account', ['recharge']),
     ...mapActions('notification', ['showNotification']),
     handleSubmit (payload) {
       const self = this
