@@ -4,7 +4,9 @@
       <Nav :items="items" />
     </a-layout-header>
     <a-layout-content style="padding: 0">
-      <Nuxt />
+      <a-spin tip="Loading..." :spinning="spinning" :delay="delayTime">
+        <Nuxt />
+      </a-spin>
     </a-layout-content>
     <a-layout-footer style="text-align: center">
       Epayco2 ©2021 Created by Leomar Esparragoza
@@ -19,6 +21,7 @@ export default {
   },
   data () {
     return {
+      delayTime: 500,
       items: [
         {
           text: 'Nuevo usuario',
@@ -37,6 +40,11 @@ export default {
           link: 'invoice'
         }
       ]
+    }
+  },
+  computed: {
+    spinning () {
+      return this.$store.state.notification.spinning
     }
   }
 }
